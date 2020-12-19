@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "routes"
+version = "0.1.0"
+description = ""
+authors = ["Artem Kanarev <artem@retechlabs.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Django = "^3.1.4"
+poetry = "^1.1.4"
+psycopg2-binary = "^2.8.6"
+django-environ = "^0.4.5"
+Hypercorn = "^0.11.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

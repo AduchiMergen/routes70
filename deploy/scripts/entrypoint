@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -o errexit
+set -o nounset
+
+>&2 echo 'Waiting for PostgreSQL to become available...'
+until python /is_postgres_ready.py; do
+  >&2 echo 'Waiting for PostgreSQL to become available...'
+  sleep 1
+done
+exec "$@"

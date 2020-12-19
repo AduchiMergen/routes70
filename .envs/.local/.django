@@ -1,0 +1,6 @@
+# General
+DJANGO_SETTINGS_MODULE=routes.settings
+DJANGO_SECRET_KEY=vkRnnaCSkQSXq07QH4zq8wy2DEf05iakzg5
+
+DATABASE_URL=postgresql://debug:debug@postgres/project
+DJANGO_DEBUG=1
